@@ -11,16 +11,18 @@
     <link rel="stylesheet" href="second_page.css">
     <link rel="stylesheet" href="third_page.css">
 
-
-
 </head>
 
 <body>
     <header class="header">
+        <div class="header__menu" onclick="toggleMenu()">
+            <img src="images/icons8-menu.svg" alt="Menu icon">
+        </div>
         <div class="header__img">
             <img src="./images/Logo.svg" alt="" class="header__img">
         </div>
-        <div class="header__buttons__ul">
+        <div> 
+        <nav id="nav-links" class="header__buttons__ul">
             <!-- переробити ул на лі і запхати в один ул -->
             <ul>
                 <div><a href="" class="header_button">About</a></div>
@@ -37,11 +39,16 @@
             <ul>
                 <div><a href="" class="header_button">Help</a></div>
             </ul>
-        </div>
-        <div class="header__signs-buttons">
-            <a href="" class="signs-in">Sign in</a>
-            <a href="" class="signs-up">Sign up</a>
-        </div>
+            
+                <div class="header__signs-buttons">
+                    
+                        <a href="" class="signs-in">Sign in</a>
+                    
+                    <a href="" class="signs-up">Sign up</a>
+                </div>
+            
+        </nav>
+
     </header>
 
     <div class="content">
@@ -63,16 +70,16 @@
                     <div><a href="" class="get__started">Get Started</a></div>
                 </div>
                 <div class="hero__img">
-                    <img src="./images/Illustration1.svg" alt="" loading="lazy" class="hero__img">
+                    <figure><img src="./images/Illustration1.svg" alt="" loading="lazy" class="hero__img"></figure>
+                </div>
             </div>
-        </div>
         </div>
         <div class="second_page__container">
             <div class="second_page__content">
                 <div class="features__img">
                     <figure><img src="./images/Illustration2.svg" alt="" loading="lazy" class="features__img">
-                </figure>
-            </div>
+                    </figure>
+                </div>
                 <div class="second_page__txt">
                     <div class="features__text">
                         <div class="features__title">
@@ -216,6 +223,8 @@
             </div>
         </div>
     </div>
+
+    <script src="./main.js"></script>
 </body>
 
 </html>
